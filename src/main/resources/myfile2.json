@@ -1,0 +1,6 @@
+{
+  "_id":  "2",
+  "myEmbeddedEntity": {
+    "myId": "1234"
+  }
+}
