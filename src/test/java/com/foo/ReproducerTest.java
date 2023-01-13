@@ -39,8 +39,7 @@ public class ReproducerTest extends BottleRocketTest {
         Set<Class<?>> aggregates = AggrageteLoader.loadAnnotatedWithEntity();
         for (Class aggregate : aggregates) {
             datastore.getMapper().map(aggregate);
-            datastore.getMapper().mapExternal(null, aggregate);
-            datastore.ensureIndexes(aggregate);
+            datastore.ensureIndexes();
         }
 
 
